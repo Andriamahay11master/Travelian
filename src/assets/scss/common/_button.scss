@@ -1,0 +1,34 @@
+.btn {
+  padding: 16px 46px;
+  font-family: $mqtPro-medium;
+  border: none;
+  border-radius: 33px;
+  transition: all 0.3s ease-in-out;
+  @media (max-width: 1440px) {
+    font-size: 15px;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+  &.btn-outline-primary {
+    border: 1px solid $color-secondary;
+    background: $white;
+    color: $color-secondary;
+    &:hover {
+      background-color: $color-secondary;
+      color: $white;
+    }
+  }
+  &.btn-outline-secondary {
+    border: 1px solid $grey;
+    background: $white;
+    color: $grey;
+    &:hover {
+      background: $grey;
+      color: $white;
+    }
+    @media (max-width: 1280px) {
+      font-size: 15px;
+    }
+  }
+}

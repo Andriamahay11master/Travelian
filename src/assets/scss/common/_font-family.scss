@@ -1,0 +1,29 @@
+@mixin font($font-family, $font-file, $font-weight){
+    @font-face {
+        font-family: $font-family;
+        src: url($font-path + '/font-family/'+$font-file+'.woff') format('woff'),
+            url($font-path + '/font-family/'+$font-file+'.woff2') format('woff2');
+        font-display: swap;
+        font-weight: $font-weight;
+    }
+}
+//ClearfaceStd
+@include font('ClearfaceStd-Regular','ClearfaceStd-Regular', 500);
+@include font('ClearfaceStd-Black','ClearfaceStd-Black', 900);
+@include font('ClearfaceStd-Bold','ClearfaceStd-Bold', bold);
+
+//ARSMaquettePro
+@include font('ARSMaquettePro-Black','ARSMaquettePro-Black', 900);
+@include font('ARSMaquettePro-BoldItalic','ARSMaquettePro-BoldItalic', bold);
+@include font('ARSMaquettePro-Bold','ARSMaquettePro-Bold', bold);
+@include font('ARSMaquettePro-Medium','ARSMaquettePro-Medium', 500);
+@include font('ARSMaquettePro-Regular','ARSMaquettePro-Regular', normal);
+
+//Nizzoli
+@include font('Nizzoli-Bold','Nizzoli-Bold', bold);
+@include font('Nizzoli-SemiBold','Nizzoli-SemiBold', 600);
+@include font('Nizzoli-Light','Nizzoli-Light', 300);
+@include font('Nizzoli-Black','Nizzoli-Black', 900);
+@include font('Nizzoli-Regular','Nizzoli-Regular', normal);
+
+@include font('Nizzoli-Regular','Nizzoli-Regular', normal);
