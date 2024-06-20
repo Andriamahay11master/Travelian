@@ -1,6 +1,6 @@
 body {
   color: $color-primary;
-  font-family: $mqtPro-regular;
+  font-family: $rubik;
   font-size: 16px;
   line-height: 1.45;
 
@@ -13,7 +13,7 @@ body {
 
   h1,
   h2 {
-    font-family: $clrface-black;
+    font-family: $playfair;
   }
 
   h1,
@@ -63,7 +63,7 @@ body {
 
   h3,
   .title-h3 {
-    font-family: $mqtPro-black;
+    font-family: $playfair;
     font-size: 26px;
 
     @include max(1280px) {
@@ -74,7 +74,7 @@ body {
   h4,
   .title-h4 {
     font-size: 18px;
-    font-family: $mqtPro-bold;
+    font-family: $playfair;
 
     @include max(1440px) {
       font-size: 16px;
@@ -94,7 +94,7 @@ body {
   }
 
   .txt-grey {
-    font-family: $mqtPro-medium;
+    font-family: $rubik;
     color: $grey;
   }
 

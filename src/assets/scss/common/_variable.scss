@@ -1,9 +1,13 @@
-$font-path: '../fonts/';
+$font-path-rubik: '/assets/fonts/Rubik/';
+$font-path-playfair: '/assets/fonts/PlayfairDisplay/';
+$font-path-icon: '/assets/fonts/font-icon/';
 
 //Color
-$color-primary: #000046;
-$color-secondary: #2322F0;
-$white: white;
+$color-primary: #FF7757;
+$color-primary-2: #FFD2C7;
+$color-secondary: #331811;
+$color-secondary-2: #61291C;
+$white: #FFF;
 $grey: #939597;
 $grey-2: #5A5453;
 $grey-3: #5B5B5B;
@@ -27,20 +31,5 @@ $transparent-grey-2: #eeeaea40;
 $white-f6:#F6F6F6;
 
 //Font-family
-$clrface-regular: 'ClearfaceStd-Regular';
-$clrface-black: 'ClearfaceStd-Black';
-$clrface-bold: 'ClearfaceStd-Bold';
-
-$mqtPro-black: 'ARSMaquettePro-Black';
-$mqtPro-boldItalic : 'ARSMaquettePro-BoldItalic';
-$mqtPro-bold: 'ARSMaquettePro-Bold';
-$mqtPro-medium: 'ARSMaquettePro-Medium';
-$mqtPro-regular: 'ARSMaquettePro-Regular';
-
-// $nzl-regular: 'Nizzoli-Regular';
-// $nzl-semi-bold: 'Nizzoli-SemiBold';
-// $nzl-bold: 'Nizzoli-Bold';
-$nzl-black: 'Nizzoli-Black';
-$nzl-regular: 'Nizzoli-Black';
-$nzl-semi-bold: 'Nizzoli-Black';
-$nzl-bold: 'Nizzoli-Black';
+$playfair: 'Playfair Display';
+$rubik: 'Rubik';

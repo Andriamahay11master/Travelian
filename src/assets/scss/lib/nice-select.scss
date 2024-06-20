@@ -54,7 +54,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     font-size: 16px;
-    font-family: $mqtPro-bold;
+    font-family: $rubik;
 
     @include max(1440px) {
       font-size: 14px;
@@ -161,7 +161,7 @@
     text-align: left;
     transition: all .2s;
     line-height: 1.4;
-    font-family: $mqtPro-medium;
+    font-family: $rubik;
     color: $grey-3;
 
     &:hover,
