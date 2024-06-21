@@ -9,15 +9,11 @@ import { useRouter } from 'next/navigation';
 
 interface HeaderProps {
     linkMenu: {name: string, href: string}[]
-    userMail: string
 }
 
-export default function Header({linkMenu, userMail} : HeaderProps) {
+export default function Header({linkMenu} : HeaderProps) {
     const [navbarOpen, setNavbarOpen] = useState(false);
-    const [lang, setLang] = useState(false);
-    const [langMobile, setLangMobile] = useState(false);
     const pathname = usePathname();
-    const router = useRouter();
 
     const closeMenu = () => {
         setTimeout(() => {
@@ -63,7 +59,6 @@ export default function Header({linkMenu, userMail} : HeaderProps) {
                                     </figure>
                                 </Link>
                             </div>
-                            <p className='usermail-mobile'>{userMail}</p>
                             <div className="boxNavIntern"> 
                                 <nav className="menuNav"> 
                                     <div className="cntNavBox"> 
@@ -94,17 +89,6 @@ export default function Header({linkMenu, userMail} : HeaderProps) {
                                 <i className={navbarOpen ? "icon-close" : "icon-burger"}></i>
                             </button>
                         </div>  
-                    </div>
-                    <div className="headerIntern-right">
-                        <div className="profil">
-                            {userMail && 
-                            <div className='profil-block'>
-                                <div className="profil-image">
-                                    <Image src="/images/user.png" alt="Avatar" width={25} height={25} title='Avatar image'/>
-                                </div>
-                                <p>{userMail}</p>
-                            </div>}
-                        </div>
                     </div>
                 </div>
             </div>   
