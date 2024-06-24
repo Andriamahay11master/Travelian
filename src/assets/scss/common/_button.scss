@@ -1,6 +1,7 @@
 .btn {
   padding: 20px 40px;
   font-family: $rubik;
+  font-size: 20px;
   border: none;
   border-radius: 12px;
   transition: all 0.3s ease-in-out;
@@ -22,8 +23,8 @@
     background: $color-primary;
     color: $white;
     &:hover {
-      background-color: rgba($color-primary-2, 0.8);
-      border-color: rgba($color-primary-2, 0.8);
+      background-color: darken($color-primary, 10%);
+      border-color: darken($color-primary, 10%);
     }
   }
   &.btn-outline-primary {
