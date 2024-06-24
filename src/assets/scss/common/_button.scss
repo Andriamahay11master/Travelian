@@ -1,14 +1,30 @@
 .btn {
-  padding: 16px 46px;
+  padding: 20px 40px;
   font-family: $rubik;
   border: none;
-  border-radius: 33px;
+  border-radius: 12px;
   transition: all 0.3s ease-in-out;
   @media (max-width: 1440px) {
     font-size: 15px;
   }
   &:hover {
     cursor: pointer;
+  }
+  &.btn-link {
+    padding: 0;
+    color: $white;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &.btn-primary {
+    border: 1px solid $color-primary;
+    background: $color-primary;
+    color: $white;
+    &:hover {
+      background-color: rgba($color-primary-2, 0.8);
+      border-color: rgba($color-primary-2, 0.8);
+    }
   }
   &.btn-outline-primary {
     border: 1px solid $color-secondary;
