@@ -91,6 +91,11 @@ export default function Header({linkMenu} : HeaderProps) {
                                     </div> 
                                 </nav>  
                             </div>
+
+                            <div className="headerIntern-mobile">
+                                <Link className="btn btn-link" href="/login" title='link to login'>Login</Link>
+                                <Link className="btn btn-primary" href="/" title='Link to Sign up '>Sign up</Link>
+                            </div>
                         </div> 
                     </div>
                     <div className="headerIntern-right">

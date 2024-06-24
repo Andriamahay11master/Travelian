@@ -5,15 +5,21 @@
   border: none;
   border-radius: 12px;
   transition: all 0.3s ease-in-out;
-  @media (max-width: 1440px) {
+  @include max(1440px) {
     font-size: 15px;
+  }
+  @include max(992px){
+    padding: 20px;
   }
   &:hover {
     cursor: pointer;
   }
+  &.btn-icon{
+    padding: 0;
+    background: transparent;
+  }
   &.btn-link {
     padding: 0;
-    color: $white;
     &:hover {
       text-decoration: underline;
     }
