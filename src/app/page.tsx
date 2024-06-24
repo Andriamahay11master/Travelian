@@ -12,19 +12,19 @@ export default function Home() {
     },  
     {
         name: `Explore`,
-        href: '/expenses'
+        href: '/#explore'
     },
     {
         name: `Travel`,
-        href: '/compte'
+        href: '/#travel'
     },
     {
         name: `Blog`,
-        href: '/category'
+        href: '/#blog'
     },
     {
         name: `Pricing`,
-        href: '/category'
+        href: '/#pricing'
     }
   ];
 

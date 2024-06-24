@@ -103,6 +103,9 @@
     position: relative;
     z-index: 2;
     padding: 41px 9.4vw;
+    @include max(1440px){
+        padding: 41px 32px;
+    }
     @include max(1200px){
         border-bottom: none;
         padding: 13px 0;
