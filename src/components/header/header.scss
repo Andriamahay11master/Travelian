@@ -256,6 +256,31 @@
             z-index: 101;
             transform: translate(0px, -50%);
         }
+        .btn-mobile
+        {
+            span{
+                &:first-child{
+                    transform-origin: 0% 0%;
+                }
+                &:nth-last-child(2){
+                    transform-origin: 0% 100%;
+                }
+            }
+            &.open{
+                span{
+                    opacity: 1;
+                    transform: rotate(45deg) translate(-3px, -1px);
+                    &:nth-last-child(3){
+                        opacity: 0;
+                        transform: rotate(0deg) scale(0.2, 0.2);
+                    }
+                    &:nth-last-child(2)
+                    {
+                        transform: rotate(-45deg) translate(0, -1px);
+                    }
+                }
+            }
+        }
     }
     .nav-right{
         @include max(1200px){
