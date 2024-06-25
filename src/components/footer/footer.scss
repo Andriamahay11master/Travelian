@@ -42,6 +42,9 @@
             img{
                 width: 234px;
                 height: auto;
+                @include max(1200px){
+                    width: 200px;
+                }
             }
         }
         .title-h3{
