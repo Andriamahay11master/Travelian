@@ -269,14 +269,14 @@
             &.open{
                 span{
                     opacity: 1;
-                    transform: rotate(45deg) translate(-3px, -1px);
+                    transform: rotate(45deg) translate(-3px, -14px);
                     &:nth-last-child(3){
                         opacity: 0;
                         transform: rotate(0deg) scale(0.2, 0.2);
                     }
                     &:nth-last-child(2)
                     {
-                        transform: rotate(-45deg) translate(0, -1px);
+                        transform: rotate(-45deg) translate(0, 15px);
                     }
                 }
             }
