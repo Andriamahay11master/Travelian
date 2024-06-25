@@ -63,7 +63,7 @@ export default function Footer() {
                             <li className="list-item">
                                 <Link href="mailto:info@travellian.com" className="list-link">info@travellian.com</Link>
                             </li>
-                            <li className="list-item">1245, New Yourk, USA</li>
+                            <li className="list-item">1245, New York, USA</li>
                         </ul>
                     </div>
                     <div className="footer-col">

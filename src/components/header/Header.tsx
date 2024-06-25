@@ -41,7 +41,7 @@ export default function Header({linkMenu} : HeaderProps) {
     return (
         <header className={`sectHeader sectHeader--fixed${navbarOpen ? ' show-menu' : ''}`}>
             <div className="headerIntern"> 
-                <div className="container-transverse">
+                <div className="container-transverse container">
                     <div className="headerIntern-left">
                         {/* <div className="cntLogoMobile">
                                 <Link href="/#home" title='Ancre to top'>

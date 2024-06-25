@@ -7,6 +7,12 @@
     position: relative;
     z-index: 2;
     padding: 240px 0 140px;
+    @include max(1200px){
+        padding: 120px 0 70px;
+    }
+    @include max(992px){
+        padding: 70px 0;
+    }
     a {
         color: $light-grey;
         text-decoration: underline;
@@ -18,9 +24,25 @@
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-gap: 8%;
+        @include max(1280px){
+            grid-gap: 6%;
+        }
+        @include max(992px){
+            grid-template-columns: 1fr;
+            row-gap: 60px;
+        }
+        .footer-col{
+            @include max(992px){
+                line-height: 1;
+            }
+        }
         .logo-link-footer{
             display: block;
             margin-bottom: 16px;
+            img{
+                width: 234px;
+                height: auto;
+            }
         }
         .title-h3{
             margin-bottom: 16px;
@@ -30,12 +52,16 @@
             font-size: 14px;
             color: $white;
             letter-spacing: -0.3px;
+            margin-bottom: 0;
         }
         .list-footer{
             .list-item{
                 margin-bottom: 12px;
                 color: $white;
                 font-size: 18px;
+                @include max(1200px){
+                    font-size: 16px;
+                }
             }
             .list-link{
                 color: $white;
@@ -54,9 +80,18 @@
                 }
                 &:not(:last-child){
                     margin-right: 24px;
+                    @include max(1200px){
+                        margin-right: 15px;
+                    }
                 }
                 i{
                     font-size: 30px;
+                    @include max(1200px){
+                        font-size: 20px;
+                    }
+                    @include max(992px){
+                        font-size: 30px;
+                    }
                 }
             }
         }
