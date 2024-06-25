@@ -3,9 +3,10 @@
 
 
 .footerPage {
-    background: $grey;
+    background: $blue;
     position: relative;
     z-index: 2;
+    padding: 240px 0 140px;
     a {
         color: $light-grey;
         text-decoration: none;
@@ -41,5 +42,11 @@
         .copyRightLink{
             text-decoration: underline;
         }
+    }
+    .footer-top{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: calc(159px * 100% / 1920px);
+
     }
 }
