@@ -13,6 +13,7 @@ interface HeaderProps {
 
 export default function Header({linkMenu} : HeaderProps) {
     const [navbarOpen, setNavbarOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
     const pathname = usePathname();
 
     const closeMenu = () => {
@@ -37,9 +38,27 @@ export default function Header({linkMenu} : HeaderProps) {
         };
     }, [navbarOpen]);
 
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 50) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
+
+
 
     return (
-        <header className={`sectHeader sectHeader--fixed${navbarOpen ? ' show-menu' : ''}`}>
+        <header className={`sectHeader sectHeader--fixed${navbarOpen ? ' show-menu' : ''}${scrolled ? ' scrolled' : ''}`}>
             <div className="headerIntern"> 
                 <div className="container-transverse">
                     <div className="headerIntern-left">
