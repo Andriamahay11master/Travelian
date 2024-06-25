@@ -10,12 +10,12 @@ export default function Footer() {
                 <div className="container">
                 <div className="footer-top">
                     <div className="footer-col">
-                        <Link href="/" title='Ancre to top'>
+                        <Link href="/" title='Ancre to top' className='logo-link-footer'>
                             <figure>
                                 <Image src="/images/logo.svg" alt="Travelian Logo Site" width={234} height={45} title='Travelian logo image'/>
                             </figure>
                         </Link>
-                        <p>2024 © Developed by <Link href="https://andriamahay-irimanana.vercel.app/" target='_blank' className='copyRightLink'>IRIMANANA Henikaja Andriamahay </Link></p>
+                        <p>2024 © Developed by <Link href="https://andriamahay-irimanana.vercel.app/" target='_blank' className='copyRightLink'>Mahay </Link></p>
                     </div>
                     <div className="footer-col">
                         <h3 className="title-h3">Menu</h3>
@@ -58,7 +58,7 @@ export default function Footer() {
                         <h3 className="title-h3">Contact Info</h3>
                         <ul className='list-footer'>
                             <li className="list-item">
-                                <Link href="tel:" className="list-link">Destinations</Link>
+                                <Link href="tel:+123 456 789" className="list-link">+123 456 789</Link>
                             </li>
                             <li className="list-item">
                                 <Link href="mailto:info@travellian.com" className="list-link">info@travellian.com</Link>

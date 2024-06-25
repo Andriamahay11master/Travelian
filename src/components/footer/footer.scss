@@ -9,44 +9,56 @@
     padding: 240px 0 140px;
     a {
         color: $light-grey;
-        text-decoration: none;
+        text-decoration: underline;
         &:hover {
-            color: #FFF;
-        }
-    }
-    .footerCopyright {
-        padding: 18px 135px;
-        border-top: 1px solid rgba($grey, 0.25);
-        background: $grey;
-        margin: 0 6px;
-        @include max(1440px){
-            padding: 18px 50px;
-        }
-        @include max(768px){
-            padding: 15px 10px;
-            border-top: none;
-        }
-        .cntCopyright {
-            display: flex;
-            align-items: center;
-            @include max(635px) {
-                flex-direction: column;
-                text-align: center;
-            }
-        }
-        p{
-            color: $light-grey;
-            font-size: 12px;
-            font-weight: 300;
-        }
-        .copyRightLink{
-            text-decoration: underline;
+            color: $color-primary;    
         }
     }
     .footer-top{
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        grid-gap: calc(159px * 100% / 1920px);
-
+        grid-gap: 8%;
+        .logo-link-footer{
+            display: block;
+            margin-bottom: 16px;
+        }
+        .title-h3{
+            margin-bottom: 16px;
+            color: $white;
+        }
+        p{
+            font-size: 14px;
+            color: $white;
+            letter-spacing: -0.3px;
+        }
+        .list-footer{
+            .list-item{
+                margin-bottom: 12px;
+                color: $white;
+                font-size: 18px;
+            }
+            .list-link{
+                color: $white;
+                text-decoration: none;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+        .list-ns{
+            display: flex;
+            align-items: center;
+            .list-item{
+                .list-link{
+                    text-decoration: none;
+                }
+                &:not(:last-child){
+                    margin-right: 24px;
+                }
+                i{
+                    font-size: 30px;
+                }
+            }
+        }
     }
 }
