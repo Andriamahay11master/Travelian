@@ -10,12 +10,26 @@
         flex-direction: column;
         width: auto!important;
         transform: translate(0,-50%);
+        @include max(1440px){
+            right: 40px;
+        }
+        @include max(1200px){
+            right: 20px;
+        }
         .dot{
             width: 16px!important;
             height: 16px!important;
             margin: 12px 0!important;
             background: $white;
             opacity: 1!important;
+            @include max(1440px){
+                right: 40px;
+            }
+            @include max(1200px){
+                width: 12px!important;
+                height: 12px!important;
+                margin: 6px 0!important;
+            }
             &.selected{
                 background: $color-primary;
             }
