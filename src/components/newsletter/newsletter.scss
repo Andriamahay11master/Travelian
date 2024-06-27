@@ -1,0 +1,54 @@
+@import "../../assets/scss/common/variable";
+@import "../../assets/scss/common/mixins";
+
+.newsletter{
+    background: $white;
+    width: 65vw;
+    border-radius: 26px;
+    .newsletter-wrapper{
+        padding: 60px 80px;
+        line-height: 1;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        column-gap: 100px;
+        align-items: center;
+    }
+    .title-h2{
+        margin-bottom: 0;
+        color: $grey;
+    }
+    form{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .form-group{
+        &:not(:last-child){
+            margin-right: 32px;
+        }
+    }
+    label{
+        display: block;
+        font-size: 20px;
+        color: $grey;
+        margin-bottom: 16px;
+    }
+    .input-forms{
+        width: 100%;
+        line-height: 1;
+        padding: 20px 40px;
+        border: 1px solid $color-primary-2;
+        background: $color-primary-2;
+        border-radius: 12px;
+        font-size: 20px;
+        color: $grey;
+        &::placeholder{
+            font-size: 20px;
+            color: $color-primary;
+        }
+        &:focus{
+            outline: none;
+            border-color: $grey;
+        }
+    }
+}

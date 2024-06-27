@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./page.module.scss";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
+import Newsletter from "@/components/newsletter/Newsletter";
 
 export default function Home() {
 
@@ -34,6 +35,7 @@ export default function Home() {
       <Header linkMenu={dataNav}/>
       <main className={styles.main}>
       </main>
+      <Newsletter title="Our newsletter"/>
       <Footer/>
     </>
   );
