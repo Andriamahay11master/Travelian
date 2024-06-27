@@ -1,0 +1,24 @@
+@import "../../assets/scss/common/variable";
+@import "../../assets/scss/common/mixins";
+
+.carousel{
+    .control-dots{
+        top: 50%;
+        right: 60px;
+        bottom: initial!important;
+        display: flex;
+        flex-direction: column;
+        width: auto!important;
+        transform: translate(0,-50%);
+        .dot{
+            width: 16px!important;
+            height: 16px!important;
+            margin: 12px 0!important;
+            background: $white;
+            opacity: 1!important;
+            &.selected{
+                background: $color-primary;
+            }
+        }
+    }
+}
