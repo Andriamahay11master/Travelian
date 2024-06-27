@@ -31,12 +31,12 @@ export default function Home() {
   ];
 
   return (
-    <>
+    <div className="page">
       <Header linkMenu={dataNav}/>
       <main className={styles.main}>
       </main>
       <Newsletter title="Our newsletter"/>
       <Footer/>
-    </>
+    </div>
   );
 }
