@@ -4,6 +4,12 @@
       margin-bottom: -109px;
       position: relative;
       z-index: 2;
+      @include max(1200px){
+        margin-bottom: -50px;
+      }
+      @include max(600px){
+        margin-bottom: -30px;
+      }
     }
     .footerPage{
       position: relative;

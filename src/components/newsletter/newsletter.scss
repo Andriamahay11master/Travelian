@@ -3,8 +3,11 @@
 
 .newsletter{
     background: $white;
-    width: 65vw;
+    width: 1262px;
     border-radius: 26px;
+    @include max(1280px){
+        width: 90%;
+    }
     .newsletter-wrapper{
         padding: 60px 80px;
         line-height: 1;
@@ -12,6 +15,13 @@
         grid-template-columns: auto 1fr;
         column-gap: 100px;
         align-items: center;
+        @include max(1200px){
+            padding: 40px 60px;
+        }
+        @include max(992px){
+            grid-template-columns: 1fr;
+            row-gap: 60px;
+        }
     }
     .title-h2{
         margin-bottom: 0;
@@ -21,17 +31,38 @@
         display: flex;
         align-items: flex-end;
         justify-content: center;
+        @include max(992px){
+            justify-content: flex-start;
+            width: 100%;
+        }
+        @include max(600px){
+            flex-direction: column;
+        }
     }
     .form-group{
+        @include max(600px){
+            width: 100%;
+        }
         &:not(:last-child){
             margin-right: 32px;
+            @include max(992px){
+                width: 100%;
+            }
+            @include max(600px){
+                margin-right: 0;
+                margin-bottom: 32px;
+            }
         }
+        
     }
     label{
         display: block;
         font-size: 20px;
         color: $grey;
         margin-bottom: 16px;
+        @include max(1200px){
+            font-size: 15px;
+        }
     }
     .input-forms{
         width: 100%;
@@ -42,13 +73,25 @@
         border-radius: 12px;
         font-size: 20px;
         color: $grey;
+        @include max(1440px){
+            font-size: 15px;
+            padding: 20px;
+        }
         &::placeholder{
             font-size: 20px;
             color: $color-primary;
+            @include max(1440px){
+                font-size: 15px;
+            }
         }
         &:focus{
             outline: none;
             border-color: $grey;
+        }
+    }
+    .btn{
+        @include max(600px){
+            width: 100%;
         }
     }
 }
