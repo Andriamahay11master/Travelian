@@ -22,7 +22,7 @@ export default function Banner({title, desc, btn, linkBtn, srcImage, width, heig
             <div className="banner-content">
                 <h1 className="banner-title">{title}</h1>
                 <p className='banner-desc'>{desc}</p>
-                <Link href={linkBtn} className='btn btn-primary' title='Banner link'>{btn}</Link>
+                <Link href={linkBtn} className='btn btn-primary' title='Banner link' target='_blank'>{btn}</Link>
             </div>
             <div className="mouse">
                 <div className="scroll"></div>
