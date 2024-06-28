@@ -5,13 +5,14 @@
     .title-h2{
         position: relative;
         margin-bottom: 52px;
+        color: $black;
         display: inline-block;
         &::after{
             content: "";
             display: block;
             position: relative;
             top: 20px;
-            height: 1px;
+            height: 2px;
             width: 50%;
             background: $color-primary;
         }

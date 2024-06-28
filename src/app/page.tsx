@@ -65,7 +65,10 @@ export default function Home() {
         <ListCarousel list={bannerList}/>
         <div className="container">
           {/* Section Popular destinations*/}
-          <Title title="Popular Destinations" content="Most popular destinations around the world, from historical places to natural wonders."/>
+          <div className="section popular-destination">
+            <Title title="Popular Destinations" content="Most popular destinations around the world, from historical places to natural wonders."/>
+          </div>
+          
         </div>
       </main>
       <Newsletter title="Our newsletter"/>
