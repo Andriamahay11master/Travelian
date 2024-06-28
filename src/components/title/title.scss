@@ -5,13 +5,18 @@
     .title-h2{
         position: relative;
         margin-bottom: 52px;
+        display: inline-block;
         &::after{
             content: "";
             display: block;
             position: relative;
-            height: 2px;
+            top: 20px;
+            height: 1px;
             width: 50%;
             background: $color-primary;
         }
+    }
+    p{
+        color: $grey;
     }
 }
