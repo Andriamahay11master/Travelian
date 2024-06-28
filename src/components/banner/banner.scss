@@ -40,7 +40,7 @@
         .banner-desc{
             margin-bottom: 25px;
             font-size: 24px;
-            @include max(1200px){
+            @include max(1440px){
               font-size: 18px;
             }
         }

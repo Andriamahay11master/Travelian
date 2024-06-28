@@ -5,6 +5,7 @@
     width: 100%;
     z-index: 101;
     background: transparent;
+    transition: background 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
     &--fixed {
         position: fixed;
         top: 0;
@@ -29,6 +30,7 @@
     &.scrolled{   
         background: $color-primary-2;
         box-shadow: 0 3px 10px -7px rgba(0, 0, 0, 0.3);
+        transition: background 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
     .header-reseau-sociaux{
         display: flex;
