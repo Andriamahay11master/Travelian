@@ -1,0 +1,17 @@
+@import "../../assets/scss/common/variable";
+@import "../../assets/scss/common/mixins";
+
+.blocTitle{
+    .title-h2{
+        position: relative;
+        margin-bottom: 52px;
+        &::after{
+            content: "";
+            display: block;
+            position: relative;
+            height: 2px;
+            width: 50%;
+            background: $color-primary;
+        }
+    }
+}
