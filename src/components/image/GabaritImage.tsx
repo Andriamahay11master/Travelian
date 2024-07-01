@@ -1,17 +1,9 @@
 import React from "react";
 import './gabaritImage.scss';
 import Image from "next/image";
+import { ImageType } from "@/models/ImageType";
 
-interface GabaritImageProps {
-    href: string;
-    title?: string;
-    desc?: string;
-    srcImage: string;
-    width: number;
-    height: number;
-    altImage: string;
-}
-export default function GabaritImage({href ,title, desc, srcImage, width, height, altImage} : GabaritImageProps) {
+export default function GabaritImage({href ,title, desc, srcImage, width, height, altImage} : ImageType) {
     return(
         <a href={href} className="gabaritImage">
             <Image className="gabaritImage-img" src={srcImage} width={width} height={height} alt={altImage} loading="lazy" title={altImage}/>
