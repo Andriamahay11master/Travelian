@@ -1,4 +1,4 @@
-export type ImageType = {
+export interface ImageType {
     href: string;
     title?: string;
     desc?: string;

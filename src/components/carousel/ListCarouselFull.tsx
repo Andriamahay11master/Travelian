@@ -11,7 +11,7 @@ interface ListCarouselProps {
 export default function ListCarouselFull({list} : ListCarouselProps) {
     return(
         <Carousel className="carousel-list-full"
-        showStatus={false} showThumbs={false} infiniteLoop={true} verticalSwipe='natural' 
+        showStatus={false} showThumbs={false} infiniteLoop={true} 
         autoPlay={false} stopOnHover={true} interval={5000} dynamicHeight={false} showArrows={false} transitionTime={1500}>
             {list.map((item, index) => (
                 <GabaritImage key={index} {...item}/>
