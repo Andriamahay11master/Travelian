@@ -12,7 +12,7 @@ interface ListCarouselProps {
 export default function ListCarouselFull({list} : ListCarouselProps) {
     const responsive = {
         desktop: {
-          breakpoint: { max: 3000, min: 1440 },
+          breakpoint: { max: 3000, min: 1200 },
           items: 3
         },
         tablet: {
@@ -20,12 +20,12 @@ export default function ListCarouselFull({list} : ListCarouselProps) {
           items: 2
         },
         mobile: {
-          breakpoint: { max: 767, min: 0 },
+          breakpoint: { max: 768, min: 0 },
           items: 1
         }
       };
     return(
-        <Carousel responsive={responsive} className="carousel-list-full" transitionDuration={500}>
+        <Carousel className="carousel-list-full" responsive={responsive} transitionDuration={500} ssr={true}>
             {list.map((item, index) => (
                 <GabaritImage key={index} {...item}/>
             ))}
