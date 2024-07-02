@@ -90,7 +90,7 @@ export default function Home() {
     },
     {
       href: 'https://www.visitnorway.fr/',
-      srcImage:'/images/destination/Destination-lisbon.jpg',
+      srcImage:'/images/destination/Destination-lisbonne.jpg',
       width: 497,
       height: 661,
       altImage:'Tourism in Portugal',
