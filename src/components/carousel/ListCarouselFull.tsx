@@ -25,7 +25,7 @@ export default function ListCarouselFull({list} : ListCarouselProps) {
         }
       };
     return(
-        <Carousel className="carousel-list-full" responsive={responsive} transitionDuration={500} ssr={true}>
+        <Carousel className="carousel-list-full" responsive={responsive} transitionDuration={500} ssr={true} renderArrowsWhenDisabled={true}>
             {list.map((item, index) => (
                 <GabaritImage key={index} {...item}/>
             ))}

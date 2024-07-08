@@ -108,8 +108,9 @@ export default function Home() {
           {/* Section Popular destinations*/}
           <div className="section popular-destination">
             <Title title="Popular Destinations" content="Most popular destinations around the world, from historical places to natural wonders."/>
+            <ListCarouselFull list={imageCarousel}/>
           </div>
-          <ListCarouselFull list={imageCarousel}/>
+          
         </div>
       </main>
       <Newsletter title="Our newsletter"/>

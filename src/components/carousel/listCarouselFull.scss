@@ -2,10 +2,23 @@
 @import "../../assets/scss/common/mixins";
 
 .carousel-list-full{
+    margin-top: 100px;
+    position: relative;
     li{
         border-radius: 26px;
         &:not(:last-child){
             margin-right: 32px;
+        }
+    }
+    .react-multiple-carousel__arrow{
+        &:disabled{
+
+        }
+        &.react-multiple-carousel__arrow--left{
+
+        }
+        &.react-multiple-carousel__arrow--right{
+
         }
     }
 }

@@ -18,5 +18,10 @@
 
     .section{
         padding: 140px 0;
+        &.popular-destination{
+          p{
+            margin-bottom: 0;
+          }
+        }
     }
   }
