@@ -2,8 +2,9 @@
 @import "../../assets/scss/common/mixins";
 
 .carousel-list-full{
-    margin-top: 100px;
+    padding-top: 100px;
     position: relative;
+    overflow: unset!important;
     li{
         border-radius: 26px;
         &:not(:last-child){
@@ -11,14 +12,26 @@
         }
     }
     .react-multiple-carousel__arrow{
+        width: 66px;
+        height: 66px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $white;
+        background: $color-primary;
+        position: absolute;
+        top: 0;
+        z-index: 1;
         &:disabled{
-
+            background: $black;
         }
         &.react-multiple-carousel__arrow--left{
-
-        }
+            left: initial;   
+            right: 106px;
+        }   
         &.react-multiple-carousel__arrow--right{
-
+            right: 0;
         }
     }
 }
