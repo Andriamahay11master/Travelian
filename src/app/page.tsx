@@ -62,7 +62,7 @@ export default function Home() {
 
   const imageCarousel = [
     {
-      href: 'https://www.myswitzerland.com/fr-fr/',
+      href: 'https://www.visitberlin.de/fr',
       srcImage:'/images/destination/Destination-berlin.jpg',
       width: 497,
       height: 661,
@@ -71,7 +71,7 @@ export default function Home() {
       desc: 'Berlin, Germany',
     },
     {
-      href: 'https://www.visitnorway.fr/',
+      href: 'https://www.visitlondon.com/',
       srcImage:'/images/destination/Destination-london.jpg',
       width: 497,
       height: 661,
@@ -80,7 +80,7 @@ export default function Home() {
       desc: 'London, United Kingdom',
     },
     {
-      href: 'https://www.visitnorway.fr/',
+      href: 'https://www.veneziaunica.it/en/content/visit-venice-0',
       srcImage:'/images/destination/Destination-venice.jpg',
       width: 497,
       height: 661,
@@ -89,7 +89,7 @@ export default function Home() {
       desc: 'Venice, Italy',
     },
     {
-      href: 'https://www.visitnorway.fr/',
+      href: 'https://www.visitlisboa.com/',
       srcImage:'/images/destination/Destination-lisbonne.jpg',
       width: 497,
       height: 661,

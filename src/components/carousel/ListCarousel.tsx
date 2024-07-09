@@ -14,7 +14,7 @@ export default function ListCarousel({list} : ListProjectProps) {
     return (
         <Carousel className="carousel-list" axis='vertical'
         showStatus={false} showThumbs={false} infiniteLoop={true} verticalSwipe='natural' 
-        autoPlay={true} stopOnHover={true} interval={5000} dynamicHeight={false} width={'100vw'} showArrows={false} transitionTime={1500}>
+        autoPlay={true} stopOnHover={true} interval={5000} dynamicHeight={false} width={'100vw'} showArrows={false} transitionTime={1500} swipeScrollTolerance={100} preventMovementUntilSwipeScrollTolerance>
             {list.map((item, index) => (
                 <Banner key={index} {...item}/>
             ))}
