@@ -10,6 +10,7 @@
     }
     li{
         border-radius: 26px;
+        overflow: hidden;
         &:not(:last-child){
             margin-right: 32px;
         }
