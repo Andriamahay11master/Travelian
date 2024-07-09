@@ -7,6 +7,9 @@
     justify-content: flex-end;
     height: 661px;
     padding: 40px 24px;
+    @include max(1440px){
+        height: 456px;
+    }
     .gabaritImage-img{
         position: absolute;
         top: 0;
@@ -29,6 +32,9 @@
             color: $white;
             font-size: 24px; 
             margin-right: 10px;
+            @include max(1440px){
+              font-size: 18px;
+            }
         }
     }
     .gabaritImage-desc{
@@ -36,7 +42,7 @@
         position: relative;
         z-index: 2;
         font-size: 24px;
-        @include max(1200px){
+        @include max(1440px){
           font-size: 18px;
         }
     } 

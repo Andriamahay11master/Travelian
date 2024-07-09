@@ -5,6 +5,9 @@
     padding-top: 100px;
     position: relative;
     overflow: unset!important;
+    @include max(1440px){
+        overflow: hidden!important;
+    }
     li{
         border-radius: 26px;
         &:not(:last-child){
@@ -23,12 +26,19 @@
         position: absolute;
         top: 0;
         z-index: 1;
+        @include max(1440px){
+            width: 56px;
+            height: 56px;
+        }
         &:disabled{
             background: $black;
         }
         &.react-multiple-carousel__arrow--left{
             left: initial;   
             right: 106px;
+            @include max(1440px){
+                right: 76px;
+            }
         }   
         &.react-multiple-carousel__arrow--right{
             right: 0;
