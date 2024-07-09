@@ -29,6 +29,11 @@ body {
 	background-color: $color-primary;
 }
 
+*::selection {
+  background-color: $color-primary;
+  color: $white;
+}
+
   h1,
   h2,h3 {
     font-family: $playfair;
