@@ -30,6 +30,9 @@
             width: 56px;
             height: 56px;
         }
+        @include max(768px){
+            top: 20px;
+        }
         &:disabled{
             background: $black;
         }
