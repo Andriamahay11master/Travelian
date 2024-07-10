@@ -6,6 +6,8 @@ import ListCarousel from "@/components/carousel/ListCarousel";
 import Title from "@/components/title/Title";
 import ListCarouselFull from "@/components/carousel/ListCarouselFull";
 import { title } from "process";
+import Blog from "@/components/blog/Blog";
+import { dataBlog } from "@/data/dataPage";
 
 export default function Home() {
 
@@ -114,7 +116,7 @@ export default function Home() {
           {/* Section Blog*/}
           <div className="section blog">
             <Title title="Our Blog" content="An insight the incredible experience in the world"/>
-
+            <Blog {...dataBlog}/>
           </div>
         </div>
       </main>
