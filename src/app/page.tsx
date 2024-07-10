@@ -111,6 +111,11 @@ export default function Home() {
             <ListCarouselFull list={imageCarousel}/>
           </div>
           
+          {/* Section Blog*/}
+          <div className="section blog">
+            <Title title="Our Blog" content="An insight the incredible experience in the world"/>
+
+          </div>
         </div>
       </main>
       <Newsletter title="Our newsletter"/>
