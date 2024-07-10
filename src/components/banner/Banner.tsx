@@ -20,7 +20,7 @@ export default function Banner({title, desc, btn, linkBtn, srcImage, width, heig
         <div className="banner">
             <Image className="banner-img" src={srcImage} width={width} height={height} alt={altImage} loading="lazy" title='banner image'/>
             <div className="banner-content">
-                <h1 className="banner-title">{title}</h1>
+                <h2 className="banner-title">{title}</h2>
                 <p className='banner-desc'>{desc}</p>
                 <Link href={linkBtn} className='btn btn-primary' title='Banner link' target='_blank'>{btn}</Link>
             </div>

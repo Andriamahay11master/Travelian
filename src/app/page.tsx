@@ -105,6 +105,7 @@ export default function Home() {
     <div className="page">
       <Header linkMenu={dataNav}/>
       <main className={styles.main}>
+        <h1 className="title-h1">Welcome to Travelian</h1>
         <ListCarousel list={bannerList}/>
         <div className="container">
           {/* Section Popular destinations*/}

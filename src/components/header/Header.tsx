@@ -62,13 +62,6 @@ export default function Header({linkMenu} : HeaderProps) {
             <div className="headerIntern"> 
                 <div className="container-transverse container">
                     <div className="headerIntern-left">
-                        {/* <div className="cntLogoMobile">
-                                <Link href="/#home" title='Ancre to top'>
-                                    <figure>
-                                        <Image src="/images/logo.svg" alt="Travelian Logo Site" width={234} height={45} title='Travelian logo image'/>
-                                    </figure>
-                                </Link>
-                        </div> */}
                         <div className="cntlogo">
                                 <Link href="/" title='Ancre to top'>
                                     <figure>
