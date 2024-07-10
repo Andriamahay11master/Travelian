@@ -7,6 +7,13 @@
     align-items: center;
     column-gap: 32px;
     padding-top: 100px;
+    @include max(1200px){
+        padding-top: 50px;
+    }
+    @include max(768px){
+        grid-template-columns: 100%;
+        row-gap: 32px;
+    }
     .blogItem-img{
         img{
             object-fit: cover;
@@ -18,6 +25,12 @@
     .title-h3{
         font-size: 54px;
         max-width: 50%;
+        @include max(1440px){
+            font-size: 44px;
+        }
+        @include max(1200px){
+            max-width: initial;
+        }
     }
     .title-h3, p{
         margin-bottom: 24px;
@@ -27,6 +40,14 @@
         font-size: 24px;
         line-height: 40px;
         font-weight: 300;
+        @include max(1440px){
+            font-size: 18px;
+            line-height: 36px;
+        }
+        @include max(1200px){
+            font-size: 16px;
+            line-height: 30px;
+        }
     }
     .btn{
         display: flex;
