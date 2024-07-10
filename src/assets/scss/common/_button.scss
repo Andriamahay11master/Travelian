@@ -5,6 +5,7 @@
   border: none;
   border-radius: 12px;
   transition: all 0.3s ease-in-out;
+  line-height: 1;
   @include max(1440px) {
     font-size: 15px;
   }
@@ -52,6 +53,19 @@
     }
     @media (max-width: 1280px) {
       font-size: 15px;
+    }
+  }
+  &.btn-arrow{
+    color: $color-primary;
+    padding: 0;
+    i{
+      transition: all 0.4s ease;
+      margin-left: 15px;
+    }
+    &:hover{
+      i{
+        margin-left: 25px;
+      }
     }
   }
 }

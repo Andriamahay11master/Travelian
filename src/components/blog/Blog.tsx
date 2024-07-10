@@ -24,7 +24,7 @@ export default function Blog({srcImage, wImage, hImage, altImage, title, desc, t
                 <div className="blogItem-body">
                     <h3 className="blogItem-title title-h3">{title}</h3>
                     <p className='blogItem-desc'>{desc}</p>
-                    <Link href={href} className='btn btn-arrow btn-primary' title='Blog link' target='_blank'>{txtButton}</Link>
+                    <Link href={href} className='btn btn-arrow' title='Blog link' target='_blank'><span>{txtButton}</span> <i className='icon-long-arrow'></i></Link>
                 </div>
             </div>
         </div>
