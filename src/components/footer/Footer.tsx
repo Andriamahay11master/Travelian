@@ -41,16 +41,16 @@ export default function Footer() {
                         <h3 className="title-h3">Information</h3>
                         <ul className='list-footer'>
                             <li className="list-item">
-                                <Link href="/contact" className="list-link">Destinations</Link>
+                                <Link href="/contact" className="list-link" title='link to destinations'>Destinations</Link>
                             </li>
                             <li className="list-item">
-                                <Link href="/contact" className="list-link">Supports</Link>
+                                <Link href="/contact" className="list-link" title='link to supports'>Supports</Link>
                             </li>
                             <li className="list-item">
-                                <Link href="/contact" className="list-link">Term & Conditions</Link>
+                                <Link href="/contact" className="list-link" title='link to term'>Term & Conditions</Link>
                             </li>
                             <li className="list-item">
-                                <Link href="/contact" className="list-link">Privacy</Link>
+                                <Link href="/contact" className="list-link" title='link to privacy'>Privacy</Link>
                             </li>
                         </ul>
                     </div>
