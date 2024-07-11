@@ -119,6 +119,13 @@ export default function Home() {
             <Title title="Our Blog" content="An insight the incredible experience in the world"/>
             <Blog {...dataBlog}/>
           </div>
+
+          {/* Section Gallery*/}
+          <div className="section gallery">
+            <Title title="Destination Gallery" content="Our photo gallery on trip"/>
+            <Blog {...dataBlog}/>
+          </div>
+
         </div>
       </main>
       <Newsletter title="Our newsletter"/>
