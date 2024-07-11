@@ -1,3 +1,4 @@
+"use client"
 import './gallery.scss'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -24,7 +25,7 @@ export default function Gallery({list} : GalleryProps) {
       };
 
     return (
-        <Carousel className="carousel-list-full" responsive={responsive} transitionDuration={500} ssr={true} renderArrowsWhenDisabled={true}>
+        <Carousel className="carousel-list-full gallery" responsive={responsive} transitionDuration={500} ssr={true} renderArrowsWhenDisabled={true}>
             {list.map((item, index) => (
                 <GabaritImage key={index} {...item}/>
             ))}
