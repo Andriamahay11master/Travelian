@@ -137,6 +137,46 @@ const dataNav = [
     }
   ]
 
+  const dataTestimonial = [
+    {
+      desc: `But I must explain to you how all this mistaken idea of denouncing pleasure and 
+      praising pain was born and I will give you a complete account of the system and expound 
+      the actual teachings of the great explorer of the truth, the master- builder of human happiness.`,
+      name: `John Doe`,
+      job: 'Accountant',
+      srcImage: '/images/testimonial/user-john-doe.jpg',
+      note: 4,
+      altImage: 'John Doe picture',
+      width: 100,
+      height: 100
+    },
+    {
+      desc: `But I must explain to you how all this mistaken idea of denouncing pleasure and 
+      praising pain was born and I will give you a complete account of the system and expound 
+      the actual teachings of the great explorer of the truth, the master- builder of human happiness.`,
+      name: `John Smith`,
+      job: 'Journalist, HWO News',
+      srcImage: '/images/testimonial/user-john-smith.jpg',
+      note: 4,
+      altImage: 'John Smith picture',
+      width: 100,
+      height: 100
+    },
+    {
+      desc: `But I must explain to you how all this mistaken idea of denouncing pleasure and 
+      praising pain was born and I will give you a complete account of the system and expound 
+      the actual teachings of the great explorer of the truth, the master- builder of human happiness.`,
+      name: `Tamara Bellis`,
+      job: 'Managing Director, JTH',
+      srcImage: '/images/testimonial/user-tamara-bellis.jpg',
+      note: 4,
+      altImage: 'Tamara Bellis picture',
+      width: 100,
+      height: 100
+    }
 
-export { dataNav, bannerList, imageCarousel, dataBlog, dataGallery }
+  ]
+
+
+export { dataNav, bannerList, imageCarousel, dataBlog, dataGallery, dataTestimonial }
     

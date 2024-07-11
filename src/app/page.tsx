@@ -7,9 +7,10 @@ import Title from "@/components/title/Title";
 import ListCarouselFull from "@/components/carousel/ListCarouselFull";
 import { title } from "process";
 import Blog from "@/components/blog/Blog";
-import { dataNav, bannerList, imageCarousel, dataBlog, dataGallery } from "@/data/dataPage";
+import { dataNav, bannerList, imageCarousel, dataBlog, dataGallery, dataTestimonial } from "@/data/dataPage";
 import Gallery from "@/components/carousel/Gallery";
 import Testimonial from "@/components/testimonial/Testimonial";
+import ListTestimonial from "@/components/testimonial/ListTestimonial";
 
 export default function Home() {
 
@@ -43,7 +44,7 @@ export default function Home() {
           {/* Section Travel*/}
           <div className="section travel">
             <Title title="Traveler’s Experiences" content="Here some awesome feedback from our travelers"/>
-            
+            <ListTestimonial list={dataTestimonial}/>
           </div>
 
         </div>

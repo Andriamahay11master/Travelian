@@ -5,13 +5,17 @@
     .testimonial-img{
         position: relative;
         z-index: 2;
-        bottom: -40px;
+        margin-left: 40px;
+        margin-bottom: -40px;
         img{
             border-radius: 100%;
             width: 100px;
             height: 100px;
             object-fit: cover;
         }
+    }
+    p,span{
+        color: $grey;
     }
     .testimonial-content{
         background: $white-f5;
@@ -24,18 +28,20 @@
         margin-bottom: 20px;
     }
     .testimonial-note{
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        column-gap: 6px;
+        display: flex;
         margin-bottom: 20px;
         i{
             font-size: 20px;
             color: $yellow;
+            &:not(:last-child){
+                margin-right: 6px;
+            }
         }
     }
     .testimonial-name{
         font-size: 24px;
         margin-bottom: 4px;
+        font-family: $playfair;
     }
     .testimonial-job{
         font-size: 18px;
