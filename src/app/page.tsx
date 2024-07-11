@@ -39,6 +39,12 @@ export default function Home() {
             <Gallery list={dataGallery}/>
           </div>
 
+          {/* Section Travel*/}
+          <div className="section travel">
+            <Title title="Traveler’s Experiences" content="Here some awesome feedback from our travelers"/>
+            <Gallery list={dataGallery}/>
+          </div>
+
         </div>
       </main>
       <Newsletter title="Our newsletter"/>
