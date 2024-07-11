@@ -5,6 +5,7 @@
     background: $white;
     width: 1262px;
     border-radius: 26px;
+    border: 1px solid rgba($grey, 0.4);
     @include max(1280px){
         width: 90%;
     }
