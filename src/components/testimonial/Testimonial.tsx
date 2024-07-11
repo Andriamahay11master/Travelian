@@ -1,18 +1,8 @@
 import React from 'react'
 import './testimonial.scss'
 import Image from 'next/image'
-
-interface TestimonialProps {
-    desc: string
-    name: string
-    job: string
-    srcImage: string
-    note: number
-    altImage: string
-    width: number
-    height: number
-}
-export default function Testimonial({desc, name, job, srcImage, note, altImage, width, height} : TestimonialProps) {
+import { TestimonialType } from '@/models/TestimonialType'
+export default function Testimonial({desc, name, job, srcImage, note, altImage, width, height} : TestimonialType) {
     return (
         <div className="testimonial">
             <div className="testimonial-img">
