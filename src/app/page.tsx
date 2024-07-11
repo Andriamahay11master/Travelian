@@ -9,6 +9,7 @@ import { title } from "process";
 import Blog from "@/components/blog/Blog";
 import { dataNav, bannerList, imageCarousel, dataBlog, dataGallery } from "@/data/dataPage";
 import Gallery from "@/components/carousel/Gallery";
+import Testimonial from "@/components/testimonial/Testimonial";
 
 export default function Home() {
 
@@ -42,7 +43,7 @@ export default function Home() {
           {/* Section Travel*/}
           <div className="section travel">
             <Title title="Traveler’s Experiences" content="Here some awesome feedback from our travelers"/>
-            <Gallery list={dataGallery}/>
+            
           </div>
 
         </div>

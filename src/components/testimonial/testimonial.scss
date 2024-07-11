@@ -1,0 +1,45 @@
+@import "../../assets/scss/common/variable";
+@import "../../assets/scss/common/mixins";
+
+.testimonial{
+    .testimonial-img{
+        position: relative;
+        z-index: 2;
+        bottom: -40px;
+        img{
+            border-radius: 100%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+    }
+    .testimonial-content{
+        background: $white-f5;
+        border-radius: 12px;
+        padding: 60px 40px 40px;
+    }
+    .testimonial-desc{
+        font-size: 18px;
+        line-height: 23px;
+        margin-bottom: 20px;
+    }
+    .testimonial-note{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        column-gap: 6px;
+        margin-bottom: 20px;
+        i{
+            font-size: 20px;
+            color: $yellow;
+        }
+    }
+    .testimonial-name{
+        font-size: 24px;
+        margin-bottom: 4px;
+    }
+    .testimonial-job{
+        font-size: 18px;
+        margin-bottom: 0; 
+    }
+
+}
