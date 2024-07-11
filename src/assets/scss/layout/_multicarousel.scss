@@ -10,6 +10,9 @@
         overflow: hidden;
         &:not(:last-child){
             margin-right: 32px;
+            @include max(768px){
+                margin-right: 0;
+            }
         }
     }
     .react-multiple-carousel__arrow{

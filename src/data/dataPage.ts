@@ -109,30 +109,30 @@ const dataNav = [
   const dataGallery = [
     {
       href: 'https://www.visitberlin.de/fr',
-      srcImage:'/images/destination/Destination-berlin.jpg',
-      width: 497,
-      height: 661,
+      srcImage:'/images/gallery/Gallery-1.jpg',
+      width: 365,
+      height: 570,
       altImage:'Tourism in Berlin',
     },
     {
       href: 'https://www.visitlondon.com/',
-      srcImage:'/images/destination/Destination-london.jpg',
-      width: 497,
-      height: 661,
+      srcImage:'/images/gallery/Gallery-2.jpg',
+      width: 365,
+      height: 570,
       altImage:'Tourism in London',
     },
     {
       href: 'https://www.veneziaunica.it/en/content/visit-venice-0',
-      srcImage:'/images/destination/Destination-venice.jpg',
-      width: 497,
-      height: 661,
+      srcImage:'/images/gallery/Gallery-3.jpg',
+      width: 365,
+      height: 570,
       altImage:'Tourism in Italy',
     },
     {
       href: 'https://www.visitlisboa.com/',
-      srcImage:'/images/destination/Destination-lisbonne.jpg',
-      width: 497,
-      height: 661,
+      srcImage:'/images/gallery/Gallery-4.jpg',
+      width: 365,
+      height: 570,
       altImage:'Tourism in Portugal',
     }
   ]
