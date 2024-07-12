@@ -7,10 +7,11 @@ import Title from "@/components/title/Title";
 import ListCarouselFull from "@/components/carousel/ListCarouselFull";
 import { title } from "process";
 import Blog from "@/components/blog/Blog";
-import { dataNav, bannerList, imageCarousel, dataBlog, dataGallery, dataTestimonial } from "@/data/dataPage";
+import { dataNav, bannerList, imageCarousel, dataBlog, dataGallery, dataTestimonial, dataOffer } from "@/data/dataPage";
 import Gallery from "@/components/carousel/Gallery";
 import Testimonial from "@/components/testimonial/Testimonial";
 import ListTestimonial from "@/components/testimonial/ListTestimonial";
+import ListOffer from "@/components/offer/ListOffer";
 
 export default function Home() {
 
@@ -29,6 +30,12 @@ export default function Home() {
             <ListCarouselFull list={imageCarousel}/>
           </div>
           
+          {/* Section Offer*/}
+          <div className="section offer">
+            <Title title="Special Offer" content="Most popular destinations around the world, from historical places to natural wonders."/>
+            <ListOffer list={dataOffer}/>
+          </div>
+
           {/* Section Blog*/}
           <div className="section blog">
             <Title title="Our Blog" content="An insight the incredible experience in the world"/>

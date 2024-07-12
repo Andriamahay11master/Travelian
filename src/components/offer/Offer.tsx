@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { OfferType } from '@/models/OfferType';
 
-export default function Offer({srcImage, altImage, wImage, hImage, title, note, desc, price, txtButton, hrefButton} : OfferType){
+export default function Offer({srcImage, altImage, wImage, hImage, title, note, desc, currency, price, txtButton, hrefButton} : OfferType){
     return (
         <div className='offer'>
             <div className="offer-top">
@@ -22,7 +22,7 @@ export default function Offer({srcImage, altImage, wImage, hImage, title, note, 
                 <p className="offer-desc">{desc}</p>
                 <div className="offer-details">
                     <div className="offe-details-col">
-                        <p className="offer-price">From<span>{price}</span></p>
+                        <p className="offer-price">From <span>{currency}{price}</span></p>
                     </div>
                     <div className="offe-details-col">
                         <Link href={hrefButton} className='btn btn-primary' title='Offer link' target='_blank'>{txtButton}</Link>

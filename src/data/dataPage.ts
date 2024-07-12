@@ -177,6 +177,54 @@ const dataNav = [
 
   ]
 
+  const dataOffer = [
+    {
+      srcImage: "/images/offer/offer-1.jpg",
+      altImage: "Image offer lisbon Portugal",
+      wImage: 497,
+      hImage: 286,
+      title: "Lisbon, Portugal",
+      note: 5,
+      desc: `5 nights and 4 days in 5 star hotel, 
+      breakfast and lunch included. Very popular during the renaissance. 
+      Passage and going through the cites of the world in classical literature.`,
+      currency:'$',
+      price: 500,
+      txtButton: "details",
+      hrefButton: "https://www.visitlisboa.com/"
+    },
+    {
+      srcImage: "/images/offer/offer-2.jpg",
+      altImage: "Image offer Athens Greece",
+      wImage: 497,
+      hImage: 286,
+      title: "Athens, Greece",
+      note: 5,
+      desc: `5 nights and 4 days in 5 star hotel, 
+      breakfast and lunch included. Very popular during the renaissance. 
+      Passage and going through the cites of the world in classical literature.`,
+      currency:'$',
+      price: 500,
+      txtButton: "details",
+      hrefButton: "https://www.visitgreece.gr/mainland/attica/athens/"
+    },
+    {
+      srcImage: "/images/offer/offer-3.jpg",
+      altImage: "Image offer Rome Italy",
+      wImage: 497,
+      hImage: 286,
+      title: "Rome, Italy",
+      note: 5,
+      desc: `5 nights and 4 days in 5 star hotel, 
+      breakfast and lunch included. Very popular during the renaissance. 
+      Passage and going through the cites of the world in classical literature.`,
+      currency:'$',
+      price: 500,
+      txtButton: "details",
+      hrefButton: "https://romesite.com/"
+    }
+  ]
 
-export { dataNav, bannerList, imageCarousel, dataBlog, dataGallery, dataTestimonial }
+
+export { dataNav, bannerList, imageCarousel, dataBlog, dataGallery, dataTestimonial, dataOffer }
     

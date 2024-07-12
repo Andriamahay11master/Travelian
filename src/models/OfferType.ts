@@ -6,6 +6,7 @@ export type OfferType = {
     title: string;
     note: number;
     desc: string;
+    currency: string;
     price: number;
     txtButton: string;
     hrefButton: string

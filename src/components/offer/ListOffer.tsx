@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 import Offer from './Offer';
 import { OfferType } from '@/models/OfferType';
