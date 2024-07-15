@@ -12,6 +12,7 @@ import Gallery from "@/components/carousel/Gallery";
 import Testimonial from "@/components/testimonial/Testimonial";
 import ListTestimonial from "@/components/testimonial/ListTestimonial";
 import ListOffer from "@/components/offer/ListOffer";
+import Link from "next/link";
 
 export default function Home() {
 
@@ -42,6 +43,19 @@ export default function Home() {
             <Blog {...dataBlog}/>
           </div>
 
+          {/* Section Trip planner*/}
+          <div className="section trip">
+              <div className="section-wrapper"> 
+                <div className="section-col">
+                  <Title title="Trip Planners" content="20 years from now you will be more disappointed by the things that you didn’t do. Stop regretting and start travelling, start throwing off the bowlines."/>
+                  <Link href="/explore" className="btn btn-primary" title='link to all trip plans'>View all trip plans</Link>
+                </div>
+                <div className="section-col">
+                  <Gallery list={dataGallery}/>
+                </div>
+              </div>
+          </div>
+
           {/* Section Gallery*/}
           <div className="section gallery">
             <Title title="Destination Gallery" content="Our photo gallery on trip"/>
@@ -53,6 +67,8 @@ export default function Home() {
             <Title title="Traveler’s Experiences" content="Here some awesome feedback from our travelers"/>
             <ListTestimonial list={dataTestimonial}/>
           </div>
+
+
 
         </div>
       </main>
