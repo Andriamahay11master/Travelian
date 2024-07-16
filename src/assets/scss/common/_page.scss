@@ -46,7 +46,7 @@
         }
         &.trip{
           .section-wrapper{
-            grid-template-columns: 20vw 1fr;
+            grid-template-columns: 20% calc(80% - 100px);
             @include max(992px){
               grid-template-columns: 100%;
             }

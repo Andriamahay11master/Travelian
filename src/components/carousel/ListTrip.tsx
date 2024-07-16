@@ -1,14 +1,15 @@
 "use client"
 import React from 'react';
-import Offer from './Offer';
-import { OfferType } from '@/models/OfferType';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import { TripType } from '@/models/TripType';
+import GabaritTrip from '../trip/GabaritTrip';
 
-interface ListOfferProps {
-    list: OfferType[]
+interface ListTripProps {
+    list: TripType[]
 }
-export default function ListOffer({list} : ListOfferProps) {
+
+export default function ListTrip({list} : ListTripProps) {
     const responsive = {
         desktop: {
           breakpoint: { max: 3000, min: 1200 },
@@ -23,11 +24,10 @@ export default function ListOffer({list} : ListOfferProps) {
           items: 1
         }
       };
-
     return (
-        <Carousel className="carousel-list-full" responsive={responsive} transitionDuration={500} ssr={true} renderArrowsWhenDisabled={true} centerMode={true}>
+        <Carousel className="carousel-list-full" responsive={responsive} transitionDuration={500} ssr={true} renderArrowsWhenDisabled={true} arrows={false} swipeable={false}>
             {list.map((item, index) => (
-                <Offer key={index} {...item}/>
+                <GabaritTrip key={index} {...item}/>
             ))}
         </Carousel>
     )
