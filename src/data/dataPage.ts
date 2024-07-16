@@ -225,6 +225,65 @@ const dataNav = [
     }
   ]
 
+  const dataTrip = [
+    {
+      href: "https://paristickets.tours/fr/visite-guidee-paris/",
+      title: "Paris City Tour",
+      desc: "7 Days tour",
+      srcImage: "/images/trip/Trip-rome.png",
+      width: 300,
+      height: 400,
+      altImage: "Trip rome",
+      category: "guided tour",
+      note: 5,
+      price: 99,
+      currency: "€",
+      time: "Day",
+    },
+    {
+      href: "https://paristickets.tours/fr/visite-guidee-paris/",
+      title: "Paris City Tour",
+      desc: "7 Days tour",
+      srcImage: "/images/trip/Trip-paris.png",
+      width: 300,
+      height: 400,
+      altImage: "Trip paris",
+      category: "guided tour",
+      note: 5,
+      price: 99,
+      currency: "€",
+      time: "Day",
+    },
+    {
+      href: "https://paristickets.tours/fr/visite-guidee-paris/",
+      title: "Paris City Tour",
+      desc: "7 Days tour",
+      srcImage: "/images/trip/Trip-spain.png",
+      width: 300,
+      height: 400,
+      altImage: "Trip spain",
+      category: "guided tour",
+      note: 5,
+      price: 99,
+      currency: "€",
+      time: "Day",
+    },
+    {
+      href: "https://paristickets.tours/fr/visite-guidee-paris/",
+      title: "Paris City Tour",
+      desc: "7 Days tour",
+      srcImage: "/images/trip/Trip-austria.png",
+      width: 300,
+      height: 400,
+      altImage: "Trip austria",
+      category: "guided tour",
+      note: 5,
+      price: 99,
+      currency: "€",
+      time: "Day",
+    }
+  ]
 
-export { dataNav, bannerList, imageCarousel, dataBlog, dataGallery, dataTestimonial, dataOffer }
+
+export { dataNav, bannerList, imageCarousel, dataBlog, dataGallery, dataTestimonial, dataOffer, dataTrip }
     

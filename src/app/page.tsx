@@ -7,12 +7,13 @@ import Title from "@/components/title/Title";
 import ListCarouselFull from "@/components/carousel/ListCarouselFull";
 import { title } from "process";
 import Blog from "@/components/blog/Blog";
-import { dataNav, bannerList, imageCarousel, dataBlog, dataGallery, dataTestimonial, dataOffer } from "@/data/dataPage";
+import { dataNav, bannerList, imageCarousel, dataBlog, dataGallery, dataTestimonial, dataOffer, dataTrip } from "@/data/dataPage";
 import Gallery from "@/components/carousel/Gallery";
 import Testimonial from "@/components/testimonial/Testimonial";
 import ListTestimonial from "@/components/testimonial/ListTestimonial";
 import ListOffer from "@/components/offer/ListOffer";
 import Link from "next/link";
+import ListTrip from "@/components/carousel/ListTrip";
 
 export default function Home() {
 
@@ -51,7 +52,7 @@ export default function Home() {
                   <Link href="/explore" className="btn btn-primary" title='link to all trip plans'>View all trip plans</Link>
                 </div>
                 <div className="section-col">
-                  <Gallery list={dataGallery}/>
+                  <ListTrip list={dataTrip}/>
                 </div>
               </div>
           </div>
