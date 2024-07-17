@@ -6,10 +6,17 @@
     flex-direction: column;
     height: 400px;
     transition: all 0.4s ease;
+    @include max(992px){
+        height: 100%;
+    }
     &:hover{
         height: 545px;
         transform: translateY(-73px);
         transition: all 0.4s ease;
+        @include max(992px){
+            height: 100%;
+            transform: initial;
+        }
         .gabaritTrip-info{
             height: 100%;
             opacity: 1;
@@ -17,7 +24,7 @@
         }
     }
     .gabaritTrip-img{
-        width: 100%;
+        width: auto;
         height: 400px;
         object-fit: cover;
         border-radius: 26px;
@@ -28,6 +35,10 @@
         transition: all 0.4s ease-in-out;
         padding: 20px 0;
         color: $black;
+        @include max(992px){
+            height: 100%;
+            opacity: 1;
+        }
         p{
             font-size: 18px;
             margin-bottom: 0;

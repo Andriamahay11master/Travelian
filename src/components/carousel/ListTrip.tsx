@@ -25,7 +25,7 @@ export default function ListTrip({list} : ListTripProps) {
         }
       };
     return (
-        <Carousel className="carousel-list-full" responsive={responsive} transitionDuration={500} ssr={true} renderArrowsWhenDisabled={true} arrows={false} swipeable={false}>
+        <Carousel className="carousel-list-full carousel-trip" responsive={responsive} transitionDuration={500} ssr={true} renderArrowsWhenDisabled={true} arrows={false} swipeable={true} rewind={true}>
             {list.map((item, index) => (
                 <GabaritTrip key={index} {...item}/>
             ))}

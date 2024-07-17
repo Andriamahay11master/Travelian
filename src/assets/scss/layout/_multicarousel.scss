@@ -2,6 +2,9 @@
     padding-top: 100px;
     position: relative;
     overflow: unset!important;
+    &.carousel-trip{
+        padding-top: 0;
+    }
     @include max(1440px){
         overflow: hidden!important;
     }
