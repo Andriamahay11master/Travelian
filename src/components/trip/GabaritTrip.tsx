@@ -4,7 +4,7 @@ import Image from "next/image";
 import { TripType } from "@/models/TripType";
 import Link from "next/link";
 
-export default function GabaritTrip({href,title,desc,srcImage,width,height,altImage,category,note,price,currency,time,} : TripType){ 
+export default function GabaritTrip({href,title,desc,srcImage,width,height,altImage,category,note,price,currency,time} : TripType){ 
     return(
         <Link href={href} className="gabaritTrip" target="_blank" rel="noopener noreferrer" title="Link to image">
             <Image className="gabaritTrip-img" src={srcImage} width={width} height={height} alt={altImage} loading="lazy" title={altImage}/>
@@ -21,7 +21,7 @@ export default function GabaritTrip({href,title,desc,srcImage,width,height,altIm
                                 <i key={index} className="icon-star"></i>
                             ))}
                         </div>
-                        <p className="gabaritTrip-desc"><i className="icon-map"></i>{desc}</p>
+                        <p className="gabaritTrip-desc">{desc}</p>
                     </div>
                 </div>
             </div>
