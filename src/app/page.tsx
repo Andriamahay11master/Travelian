@@ -21,30 +21,30 @@ export default function Home() {
   return (
     <div className="page">
       <Header linkMenu={dataNav}/>
-      <main className={styles.main}>
+      <main className={styles.main} id="home"> 
         <h1 className="title-h1">Welcome to Travelian</h1>
         <ListCarousel list={bannerList}/>
         <div className="container">
           {/* Section Popular destinations*/}
-          <div className="section popular-destination">
+          <div className="section popular-destination" id="explore">
             <Title title="Popular Destinations" content="Most popular destinations around the world, from historical places to natural wonders."/>
             <ListCarouselFull list={imageCarousel}/>
           </div>
           
           {/* Section Offer*/}
-          <div className="section offer">
+          <div className="section offer"  id="travel">
             <Title title="Special Offer" content="Most popular destinations around the world, from historical places to natural wonders."/>
             <ListOffer list={dataOffer}/>
           </div>
 
           {/* Section Blog*/}
-          <div className="section blog">
+          <div className="section blog"  id="blog">
             <Title title="Our Blog" content="An insight the incredible experience in the world"/>
             <Blog {...dataBlog}/>
           </div>
 
           {/* Section Trip planner*/}
-          <div className="section trip">
+          <div className="section trip"  id="pricing">
               <div className="section-wrapper"> 
                 <div className="section-col">
                   <Title title="Trip Planners" content="20 years from now you will be more disappointed by the things that you didn’t do. Stop regretting and start travelling, start throwing off the bowlines."/>

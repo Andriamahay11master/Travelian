@@ -2,7 +2,7 @@
 const dataNav = [
     {
         name: 'Home',
-        href: '/'   
+        href: '/#home'   
     },  
     {
         name: `Explore`,
