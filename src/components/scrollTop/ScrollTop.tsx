@@ -2,9 +2,11 @@
 import Link from 'next/link';
 import './scrollTop.scss';
 import React, { useEffect, useState } from 'react';
+import CurrentHashContext, { CurrentHashContextProps } from '@/app/CurrentHashContext';
 
 export default function ScrollTop() {
     const [isVisible, setIsVisible] = useState(false);
+    const { currentHash, setCurrentHash } = React.useContext(CurrentHashContext) || {} as CurrentHashContextProps;
 
     // Fonction pour gérer le défilement
     const handleScroll = () => {
@@ -20,18 +22,25 @@ export default function ScrollTop() {
         };
     }, []);
 
-    // Fonction pour remonter en haut de la page
-    const scrollToTop = (e : any) => {
-        e.preventDefault();
-        window.scrollTo({
-        top: 0,
-        behavior: 'smooth',
-        });
-    };
+    const defaultStateActive = (link: string) => {
+        setCurrentHash(link);
+    }
+
+    React.useEffect(() => {
+        const handleHashChange = () => {
+            setCurrentHash(window.location.hash);
+        };
+
+        window.addEventListener("hashchange", handleHashChange);
+
+        return () => {
+            window.removeEventListener("hashchange", handleHashChange);
+        };
+    }, [currentHash]);
 
     return (
         <div className={isVisible ? 'scroll-top active' : 'scroll-top'}>
-            <Link href="#" className='btn btn-top' onClick={scrollToTop}><i className="icon-arrow-down"></i></Link>
+            <Link href="/#home" className='btn btn-top' onClick={() => defaultStateActive("/#home")}><i className="icon-arrow-down"></i></Link>
         </div>
     );
 }
