@@ -29,7 +29,6 @@ export default function ScrollTop() {
         });
     };
 
-    if (!isVisible) { return null; }
     return (
         <div className={isVisible ? 'scroll-top active' : 'scroll-top'}>
             <Link href="#" className='btn btn-top' onClick={scrollToTop}><i className="icon-arrow-down"></i></Link>
