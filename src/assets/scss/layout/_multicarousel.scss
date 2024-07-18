@@ -6,10 +6,10 @@
         padding-top: 0;
     }
     &.carousel-offer{
-        display: block;
-        @include max(992px){
-            display: flex;
-        }
+        // display: block;
+        // @include max(992px){
+        //     display: flex;
+        // }
     }
     @include max(1440px){
         overflow: hidden!important;

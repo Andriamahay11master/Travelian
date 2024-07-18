@@ -25,7 +25,7 @@ export default function ListOffer({list} : ListOfferProps) {
       };
 
     return (
-        <Carousel className="carousel-list-full carousel-offer" responsive={responsive} transitionDuration={500} ssr={true} renderArrowsWhenDisabled={true} centerMode={true}>
+        <Carousel className="carousel-list-full carousel-offer" responsive={responsive} transitionDuration={500} ssr={true} renderArrowsWhenDisabled={true}>
             {list.map((item, index) => (
                 <Offer key={index} {...item}/>
             ))}
