@@ -1,0 +1,13 @@
+@import "../../assets/scss/common/variable";
+@import "../../assets/scss/common/mixins";
+
+.scroll-top{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 10;
+    @include max(768px){
+        right: 20px;
+        bottom: 20px;
+    }
+}
