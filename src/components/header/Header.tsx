@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation'
 import './header.scss';
 import Image from 'next/image';
-import { useRouter } from 'next/navigation';
 
 interface HeaderProps {
     linkMenu: {name: string, href: string}[]
@@ -63,7 +62,7 @@ export default function Header({linkMenu} : HeaderProps) {
                 <div className="container-transverse container">
                     <div className="headerIntern-left">
                         <div className="cntlogo">
-                                <Link href="/" title='Ancre to top'>
+                                <Link href="/#home" title='Ancre to top'>
                                     <figure>
                                         <Image src="/images/logo.svg" alt="Travelian Logo Site" width={234} height={45} title='Travelian logo image'/>
                                     </figure>

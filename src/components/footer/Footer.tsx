@@ -10,7 +10,7 @@ export default function Footer() {
                 <div className="container">
                 <div className="footer-top">
                     <div className="footer-col">
-                        <Link href="/" title='Ancre to top' className='logo-link-footer'>
+                        <Link href="/#home" title='Ancre to top' className='logo-link-footer'>
                             <figure>
                                 <Image src="/images/logo.svg" alt="Travelian Logo Site" width={234} height={45} title='Travelian logo image'/>
                             </figure>
@@ -21,7 +21,7 @@ export default function Footer() {
                         <h3 className="title-h3">Menu</h3>
                         <ul className='list-footer'>
                             <li className="list-item">
-                                <Link href="/" className="list-link" title='link to home'>Home</Link>
+                                <Link href="/#home" className="list-link" title='link to home'>Home</Link>
                             </li>
                             <li className="list-item">
                                 <Link href="/explore" className="list-link" title='link to explore'>Explore</Link>
