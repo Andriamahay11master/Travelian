@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Rubik, Playfair_Display } from "next/font/google";
 import "./globals.scss";
 import "@/assets/scss/main.scss";
+import { CurrentHashProvider } from "./CurrentHashContext";
 
 const rubik = Rubik({ subsets: ["latin"] });
 const playfair = Playfair_Display({ subsets: ["latin"] });
@@ -22,7 +23,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={font.rubik.className} suppressHydrationWarning={true}>{children}</body>
+      <body className={font.rubik.className} suppressHydrationWarning={true}>
+        <CurrentHashProvider>
+          {children}
+        </CurrentHashProvider>
+      </body>
     </html>
   );
 }

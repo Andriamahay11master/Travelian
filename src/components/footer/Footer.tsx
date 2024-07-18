@@ -1,16 +1,35 @@
+"use client"
 import * as React from 'react';
 import './footer.scss';
 import Link from 'next/link';
 import Image from 'next/image';
+import CurrentHashContext, { CurrentHashContextProps } from '@/app/CurrentHashContext';
 
 export default function Footer() {
-    
+    const { currentHash, setCurrentHash } = React.useContext(CurrentHashContext) || {} as CurrentHashContextProps;
+
+    const defaultStateActive = (link: string) => {
+        setCurrentHash(link);
+    }
+
+    React.useEffect(() => {
+        const handleHashChange = () => {
+            setCurrentHash(window.location.hash);
+        };
+
+        window.addEventListener("hashchange", handleHashChange);
+
+        return () => {
+            window.removeEventListener("hashchange", handleHashChange);
+        };
+    }, [currentHash]);
+
     return (
         <footer className='footerPage'>
                 <div className="container">
                 <div className="footer-top">
                     <div className="footer-col">
-                        <Link href="/#home" title='Ancre to top' className='logo-link-footer'>
+                        <Link href="/#home" title='Ancre to top' className='logo-link-footer' onClick={() => defaultStateActive("/#home")}>
                             <figure>
                                 <Image src="/images/logo.svg" alt="Travelian Logo Site" width={234} height={45} title='Travelian logo image'/>
                             </figure>
