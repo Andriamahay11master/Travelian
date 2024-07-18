@@ -14,6 +14,7 @@ import ListTestimonial from "@/components/testimonial/ListTestimonial";
 import ListOffer from "@/components/offer/ListOffer";
 import Link from "next/link";
 import ListTrip from "@/components/carousel/ListTrip";
+import ScrollTop from "@/components/scrollTop/ScrollTop";
 
 export default function Home() {
 
@@ -75,6 +76,7 @@ export default function Home() {
       </main>
       <Newsletter title="Our newsletter"/>
       <Footer/>
+      <ScrollTop/>
     </div>
   );
 }

@@ -68,4 +68,21 @@
       }
     }
   }
+  &.btn-top{
+    padding: 20px;
+    color: $white;
+    background: $color-primary;
+    border-radius: 7px;
+    @include max(768px){
+      padding: 15px;
+    }
+    i{
+      display: inline-block;
+      transform: rotate(180deg);
+    }
+    &:hover{
+      background-color: darken($color-primary, 10%);
+      border-color: darken($color-primary, 10%);
+    }
+  }
 }
