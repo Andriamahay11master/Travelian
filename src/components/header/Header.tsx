@@ -2,7 +2,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation'
 import './header.scss';
 import Image from 'next/image';
 
@@ -13,9 +12,10 @@ interface HeaderProps {
 export default function Header({linkMenu} : HeaderProps) {
     const [navbarOpen, setNavbarOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
-    const pathname = usePathname();
+    const [currentHash, setCurrentHash] = useState("/#home");
 
-    const closeMenu = () => {
+    const closeMenu = (link: string) => {
+        setCurrentHash(link);
         setTimeout(() => {
             setNavbarOpen(false);
         }, 300)
@@ -35,7 +35,7 @@ export default function Header({linkMenu} : HeaderProps) {
         return () => {
             window.removeEventListener("resize", handleResize);
         };
-    }, [navbarOpen]);
+    }, [navbarOpen, currentHash]);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -50,6 +50,18 @@ export default function Header({linkMenu} : HeaderProps) {
 
         return () => {
             window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
+    useEffect(() => {
+        const handleHashChange = () => {
+            setCurrentHash(window.location.hash);
+        };
+
+        window.addEventListener("hashchange", handleHashChange);
+
+        return () => {
+            window.removeEventListener("hashchange", handleHashChange);
         };
     }, []);
 
@@ -84,14 +96,14 @@ export default function Header({linkMenu} : HeaderProps) {
                                     <div className="cntNavBox"> 
                                         <ul className="cntNav">
                                             {linkMenu.map((link) => {
-                                                const isActive = pathname === link.href
+                                                const isActive = currentHash === link.href
                                         
                                                 return (
                                                     <li key={link.name}>
                                                         <Link
                                                             className={isActive ? 'cntNav-link active' : 'cntNav-link'}
-                                                            href={link.href}
-                                                            onClick={closeMenu} locale="en" title='Link menu'>
+                                                            href={link.href} 
+                                                            onClick={() => closeMenu(link.href)} locale="en" title='Link menu'>
                                                             {link.name}
                                                         </Link>
                                                     </li>
